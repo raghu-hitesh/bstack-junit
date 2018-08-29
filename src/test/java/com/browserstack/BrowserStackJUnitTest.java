@@ -84,11 +84,14 @@ public class BrowserStackJUnitTest {
             accessKey = (String) config.get("key");
         }
 
-        if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
-            l = new Local();
-            Map<String, String> options = new HashMap<String, String>();
-            options.put("key", accessKey);
-            l.start(options);
+        String local = System.getenv("BROWSERSTACK_LOCAL");
+        if(local !=null){
+            capabilities.setCapability("browserstack.local",local);
+        }
+
+        String localIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
+        if(localIdentifier!=null){
+            capabilities.setCapability("browserstack.localIdentifier",localIdentifier);
         }
 
         driver = new RemoteWebDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
