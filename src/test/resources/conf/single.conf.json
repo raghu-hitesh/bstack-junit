@@ -4,8 +4,8 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "junit-browserstack",
-    "name": "single_test",
+    "build": "junit-bstack123",
+    "name": "singlebstack",
     "browserstack.debug": true
   },
 
