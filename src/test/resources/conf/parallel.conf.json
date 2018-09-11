@@ -4,8 +4,8 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "junit-browserstack",
-    "name": "parallel_test",
+    "build": "junitbstackparallel",
+    "name": "parallelbstack",
     "browserstack.debug": true
   },
 
