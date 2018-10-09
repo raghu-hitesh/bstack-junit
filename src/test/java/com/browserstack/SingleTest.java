@@ -12,7 +12,7 @@ public class SingleTest extends BrowserStackJUnitTest {
   public void test() throws Exception {
     driver.get("https://www.google.com/ncr");
     WebElement element = driver.findElement(By.name("q"));
-    element.sendKeys("BrowserStackWebsite");
+    element.sendKeys("BrowserStack");
     element.submit();
     Thread.sleep(5000);
 
