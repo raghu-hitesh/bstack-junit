@@ -18,10 +18,4 @@ public class SingleTest extends BrowserStackJUnitTest {
 
     assertEquals("BrowserStack - Google Search", driver.getTitle());
   }
-
-  @Test
-  public void nonremotetest() throws Exception {
-    
-    assertEquals("Timepass", "Timepass");
-  }
 }
