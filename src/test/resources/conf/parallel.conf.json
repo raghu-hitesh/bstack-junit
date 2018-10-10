@@ -4,7 +4,9 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "browserstack.debug": true
+    "browserstack.debug": true,
+    "build":"parallel_vsts_build",
+    "name": "parallel_vsts"
   },
 
   "environments": [{
