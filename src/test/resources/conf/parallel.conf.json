@@ -4,18 +4,24 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "junitbstackparallel",
-    "name": "parallelbstack",
     "browserstack.debug": true
   },
 
   "environments": [{
-    "browser": "chrome"
+    "os_version" : "10.3",
+    "device" : "iPhone 7"
   },{
-    "browser": "firefox"
+    "os_version" : "7.0",
+    "device" : "Samsung Galaxy S8"
   },{
-    "browser": "safari"
+    "os" : "Windows",
+  "os_version" : "XP",
+  "browserName" : "Firefox",
+"browser_version" : "46.0"
   },{
-    "browser": "internet explorer"
+    "os" : "OS X",
+"os_version" : "High Sierra",
+"browserName" : "Safari",
+"browser_version" : "11.0"
   }]
 }
