@@ -8,20 +8,26 @@
   },
 
   "environments": [{
-    "os_version" : "10.3",
-    "device" : "iPhone 7"
-  },{
-    "os_version" : "7.0",
-    "device" : "Samsung Galaxy S8"
-  },{
-    "os" : "Windows",
-  "os_version" : "XP",
-  "browserName" : "Firefox",
-"browser_version" : "46.0"
-  },{
+    "browser":"chrome",
+    "os":"Windows",
+    "os_version":"8",
+    "browser_version":"69.0"
+  },
+  {
     "os" : "OS X",
-"os_version" : "High Sierra",
-"browserName" : "Safari",
-"browser_version" : "11.0"
-  }]
+    "os_version" : "Sierra",
+    "browserName" : "Safari",
+    "browser_version" : "10.0"
+  },
+  {
+    "os_version" : "10.3",
+    "device" : "iPhone 7",
+    "real_mobile" : "true"
+  },
+  {
+    "os_version" : "7.0",
+    "device" : "Samsung Galaxy S8",
+    "real_mobile" : "true"
+  }
+  ]
 }
