@@ -17,7 +17,7 @@ steps:
   inputs:
     mavenPomFile: '$(Parameters.mavenPOMFile)'
 
-    options: 'clean package'
+    options: 'clean test'
 
 
 - script: |
