@@ -1,0 +1,28 @@
+resources:
+- repo: self
+queue:
+  name: Default
+  demands: maven
+
+#Your build pipeline references an undefined variable named ‘Parameters.mavenPOMFile’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+steps:
+- task: browserstackcom.browserstack-vsts-extension.browserstack-config-task.BrowserStackConfig@0
+  displayName: 'BrowserStack configuration setup.'
+  inputs:
+    BrowserStackServiceEndPoint: 'Browserstack_hitesh'
+
+
+- task: Maven@3
+  displayName: 'Maven pom.xml'
+  inputs:
+    mavenPomFile: '$(Parameters.mavenPOMFile)'
+
+    options: 'clean package'
+
+
+- script: |
+   echo "username : "$BROWSERSTACK_USERNAME
+   
+   
+  displayName: 'Command Line Script'
+
