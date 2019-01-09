@@ -17,7 +17,7 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
 
-    options: 'clean test'
+    options: 'clean test -P single'
 
 
 - script: |
