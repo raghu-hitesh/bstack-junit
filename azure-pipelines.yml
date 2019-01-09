@@ -22,7 +22,7 @@ steps:
 
 - script: |
    echo "username : "$BROWSERSTACK_USERNAME
-   echo "aasdasd"
+   echo "aasdasdsafd asaf"
    
    
   displayName: 'Command Line Script'
