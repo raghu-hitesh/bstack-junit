@@ -9,7 +9,7 @@ steps:
 - task: browserstackcom.browserstack-vsts-extension.browserstack-config-task.BrowserStackConfig@0
   displayName: 'BrowserStack configuration setup.'
   inputs:
-    BrowserStackServiceEndPoint: 'bstack'
+    BrowserStackServiceEndPoint: 'bstack_hitesh'
 
 
 - task: Maven@3
